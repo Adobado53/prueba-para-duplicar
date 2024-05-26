@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Data</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="formulario">
+        <label for="nombreArticulo">Nombre del Artículo:</label>
+        <input type="text" id="nombreArticulo" name="nombreArticulo" required>
+
+        <label for="precioPesos">Precio en pesos mexicanos:</label>
+        <input type="number" id="precio" name="precio" step="0.01" required>
+
+        <label for="idUsuario">ID del usuario:</label>
+        <input type="number" id="idUsuario" name="idUsuario" required>
+
+        <label for="tipoProducto">Tipo de producto:</label>
+        <select id="tipoProducto" name="tipoProducto" required>
+            <option value="">Seleccionar tipo de producto</option>
+            <option value="electronica">Electrónica</option>
+            <option value="ropa">Ropa</option>
+            <option value="hogar">Hogar</option>
+            <option value="otros">Otros</option>
+        </select>
+
+        <label for="cantidad">Cantidad de productos:</label>
+        <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <div id="data-container"></div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Proyecto</title>
+  </head>
+
+  <body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="text-body-secondary fs-5 fw-bold"> EcoShop</span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catálogo	
+              </a>
+            
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="catalogo ropa.html">Ropa</a></li>
+              <li><a class="dropdown-item" href="catalogo electronica.html">Electrónica</a></li>
+              <li><a class="dropdown-item" href="catalogo hogar.html">Hogar</a></li>
+              <li><a class="dropdown-item" href="catalogo juguetes.html">Jugetes</a></li>
+             </ul>
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#Acerca_de">Acerca de nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contacto">Contacto</a>
+            </li>
+
+          </ul>
+          <button class="btn btn-outline-dark mt-3" type="button" id="dropdownCarrito" onclick="window.location.href='carrito.html'" aria-expanded="false">
+            <a href="carrito.html"> </a> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+    <br>
+      <h4><b><br>Hogar</b></h4>
+      <br>
+ 
+
+    <!--main container-->
+    <div class="container">
+      
+      <!--Fila-->
+      <div class="row">
+
+        <!--Tarjeta de producto-->
+        <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Lavadora Hisense</h5>
+              <p class="descripcion-producto">Lavadora con puerta frontal marca Hisense con capacidad de 20kg</p>
+              <p class="precio">$20,000</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--FIN tarjeta de producto-->
+
+        <br>
+        <!--Inicio-->
+        <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Estufa mabe</h5>
+              <p class="descripcion-producto">Estufa con horno integrado con 6 parrillas marca mabe</p>
+              <p class="precio">$30,000</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--Fin-->
+
+        <br>
+        <!--Inicio-->
+        <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Refrigerador Hisense</h5>
+              <p class="descripcion-producto">Refrigerador marca Hisense de una puerta con amplia capacidad de enfriamiento</p>
+              <p class="precio">$15,000</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--Fin-->
+        
+        <!--Fila-->
+      <div class="row">
+
+         <!--Inicio-->
+         <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar4.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Horno eléctrico</h5>
+              <p class="descripcion-producto">Horno electríco marca Gourmia con doble puerta y reloj integrado</p>
+              <p class="precio">$5,500</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--Fin-->
+
+        <br>
+
+        <!--Tarjeta de producto-->
+        <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar5.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Armario chocolate multiusos</h5>
+              <p class="descripcion-producto">Armario de madera en color chocolate con múltiples compartimientos</p>
+              <p class="precio">$9,000</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--FIN tarjeta de producto-->
+
+        <br>
+
+        <!--Inicio-->
+        <div class="col-md">
+          <div class="card mb-4" style="width: 18rem;">
+            <img src="images/hogar6.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="nombre-producto">Batería de cocina</h5>
+              <p class="descripcion-producto">Juego de sartenes y ollas de acero inoxidable, incluidos colador y cucharones, 14 pzas.</p>
+              <p class="precio">$2,300</p>
+              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+            </div>
+          </div>
+        </div>
+        <!--Fin-->
+
+    </main>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   
+  </body>
+</html>

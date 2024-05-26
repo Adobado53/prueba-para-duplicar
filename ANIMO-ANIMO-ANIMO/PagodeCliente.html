@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pago de Cliente</title>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <button id="getPaymentButton">Realiza Pago</button>
+  <div id="paymentDetails"></div>
+  <script>
+    const getPaymentButton = document.getElementById('getPaymentButton');
+    const paymentDetails = document.getElementById('paymentDetails');
+
+    getPaymentButton.addEventListener('click', async () => {
+    try {
+      const response = await axios.get('http://localhost:7071/Payment/1'); // Replace with your API URL
+      const payment = response.data;
+      paymentDetails.innerHTML = `
+        <strong>ID:</strong> ${payment.id}<br>
+        <strong>Amount:</strong> ${payment.amount} ${payment.currency}<br>
+        <strong>Status:</strong> ${payment.status}
+      `;
+    } catch (error) {
+      console.error(error);
+      paymentDetails.textContent = 'Error fetching payment details.';
+    }
+  });
+  </script>
+</body>
+</html>

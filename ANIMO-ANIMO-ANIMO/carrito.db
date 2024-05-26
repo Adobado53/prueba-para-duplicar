@@ -1,0 +1,15 @@
+-- Crear base de datos
+CREATE DATABASE IF NOT EXISTS your_database_name;
+
+-- Seleccionar base de datos
+USE your_database_name;
+
+-- Crear tabla productos
+CREATE TABLE IF NOT EXISTS productos (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  nombre_articulo VARCHAR(255) NOT NULL,
+  precio FLOAT NOT NULL,
+  id_usuario INT NOT NULL,
+  tipo_producto ENUM('Electronica', 'Ropa', 'Hogar', 'Otros') NOT NULL,
+  cantidad INT NOT NULL
+);

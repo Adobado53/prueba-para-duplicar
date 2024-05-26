@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Ropa</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <span class="text-body-secondary fs-5 fw-bold"> EcoShop</span> 
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Catálogo
+              </a>
+            
+
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="catalogo ropa.html">Ropa</a></li>
+                <li><a class="dropdown-item" href="catalogo electronica.html">Electrónica</a></li>
+                <li><a class="dropdown-item" href="catalogo hogar.html">Hogar</a></li>
+                <li><a class="dropdown-item" href="catalogo juguetes.html">Jugetes</a></li>
+             </ul>
+
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Acerca_de">Acerca de nosotros</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <br>
+
+      <h5><b>¡Bienvenido a EcoShop!</b></h5>
+      
+      <br>
+      
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner h-39" >
+          <div class="carousel-item active">
+            <img src="./images/Tienda.jpg" class="d-block w-100 img-fluid" alt="slide1">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/tienda2.jpg" class="d-block w-100 img-fluid" alt="slide2">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/Tienda 3.jpg" class="d-block w-100 img-fluid" alt="slide3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <br>
+
+    <section class="w-50 mx-auto text-center">
+      <h1 class="p-2 fs-4 border-bottom">Tu tienda para productos económicos de calidad en las categorías de <span class="text-success">ropa, electrónica, 
+        hogar y juguetes. </span></h1> <h2 class="p-2 fs-5"><p><p>Nos enorgullece ofrecerte una amplia selección de artículos a precios asequibles, sin 
+        comprometer la calidad. </p></p> </h2>
+    </section>
+
+    <br><br>
+
+    <section class="container-fluid" id="Acerca_de">
+      <div class="row w-75 mx-auto">
+        <div class="col-md">
+          <img src="./images/Crecimineto.jpg" alt="Historia"
+          width="180" height="160">
+          <div>
+            <h3>Historia</h3>
+            <p style="text-align: justify;">Nacimos del deseo de proporcionar a nuestros clientes productos de alta calidad a 
+              precios asequibles. En EcoShop, nos enorgullece ofrecer una amplia gama de productos a precios económicos que se adaptan a cualquier presupuesto</p>
+          </div>
+        </div>
+        <div class="col-md">
+          <img src="./images/misión.jpg" alt="Historia"
+          width="180" height="160">
+          <div>
+            <h3>Misión</h3>
+            <p style="text-align: justify;">Nuestra misión es ofrecer una experiencia de compra 
+              conveniente y accesible para nuestros clientes, brindando una amplia gama de productos de alta calidad a precios económicos. </p>
+          </div>
+      </div>
+      <div class="col-md">
+        <img src="./images/Equipo.jpg" alt="Historia"
+        width="180" height="160">
+        <div>
+          <h3>Nuestro equipo</h3>
+          <p style="text-align: justify;">nos enorgullece contar con un equipo apasionado y dedicado que 
+            trabaja incansablemente para ofrecerte la mejor experiencia de compra posible. Con una combinación única de habilidades y experiencias. </p>
+        </div>
+      </div>
+    </section>
+
+   <br><br><br>
+
+   <section id="contacto">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Contacto</h2>
+                <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta, sugerencia o simplemente quieres saludar, no dudes en ponerte en contacto con nosotros. Completa el formulario de contacto a continuación o utiliza la información de contacto proporcionada.</p>
+            </div>
+            <div class="col-md-6">
+                <form action="enviar.php" method="post">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/java scrip yael .js"></script>
+   
+  </body>
+</html>
+
